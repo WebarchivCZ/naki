@@ -2,7 +2,6 @@ pipeline {
   agent any
     stages {
       stage('Build images and push them to Dockerhub') {
-        }
         steps {
           sh '''#!/usr/bin/env bash
             # Make Bash Great Again
