@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  naki:
+    image: webarchiv/vyvoj:naki
+    ports: 
+      - "80:80"
