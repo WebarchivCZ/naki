@@ -51,6 +51,7 @@ pipeline {
             set -o pipefail # catch non-zero exit code in pipes
             # set -o xtrace # uncomment for bug hunting
 
+            # Upcoming script is deployed via Seeder repository.
             ssh -o "StrictHostKeyChecking=no" -i ${SSH_CREDS} ${SSH_CREDS_USR}@10.3.0.50 sudo /home/ansible/seeder/update_vyvoj.sh
           '''
         }
